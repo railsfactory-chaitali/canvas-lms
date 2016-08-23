@@ -16,4 +16,8 @@ require File.expand_path("../config/canvas_rails4_2", __FILE__)
 
 Dir.glob(File.join(File.dirname(__FILE__), 'Gemfile.d', '*.rb')).sort.each do |file|
   eval(File.read(file), nil, file)
+
+end
+group :production do
+  gem 'rails_12factor'
 end
