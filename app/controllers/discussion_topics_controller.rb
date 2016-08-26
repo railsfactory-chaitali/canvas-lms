@@ -682,6 +682,7 @@ class DiscussionTopicsController < ApplicationController
   #
   def create
     process_discussion_topic(!!:is_new)
+    
   end
 
   # @API Update a topic
